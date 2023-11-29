@@ -15,7 +15,7 @@
                         
                         <div class="card-header text-center py-4">
                             <h4 class="title">
-                                Sign IN
+                                Sign In
                             </h4>
 
                             <h6 class="card-category">
@@ -63,32 +63,6 @@
                                     Don't have an account? <a href="{{ url_for('authentication_blueprint.register') }}" class="text-primary">Register</a>                            
                                 </p>
                             </div>
-
-                            {% if config.SOCIAL_AUTH_GITHUB %}
-
-                                <div class="text-center">
-            
-                                <span class="text-muted">or Sign IN with</span> 
-                                    
-                                    <br />
-                                    <br />
-                                    
-                                    <div class="text-center mx-auto">
-            
-                                    {% if config.SOCIAL_AUTH_GITHUB %}
-                                        <a href="{{url_for('authentication_blueprint.login_github')}}" class="btn btn-github btn-sm">
-                                        <i class="fab fa-github"></i>
-                                        </a>
-                                    {% endif %}
-            
-                                    </div>
-            
-                                </div>  
-
-                                <br />
-        
-                            {% endif %}
-
 
                         </form>
 
