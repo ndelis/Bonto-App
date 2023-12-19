@@ -1,6 +1,4 @@
-from apps.home import blueprint
 from flask import render_template, request
-from flask_login import login_required
 from jinja2 import TemplateNotFound
 
 from flask_sqlalchemy import SQLAlchemy
@@ -18,7 +16,7 @@ def calculate_best_rate():
     # Return the value of the best rate
     return best_rate.value if best_rate else None
 
-@blueprint.route('/index', methods = ['GET'])
+@app.route('/index', methods = ['GET'])
 def index():
     best_rate = calculate_best_rate()    
     return render_template('index.html', best_rate=best_rate)
