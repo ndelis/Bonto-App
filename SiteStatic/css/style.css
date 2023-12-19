@@ -1,0 +1,274 @@
+*{
+	font-family: Open sans, "Apercu",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+	font-size: medium;
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: Open sans;
+    src: url('/SiteStatic/media/font/Open_Sans/static/OpenSans-Regular.ttf');
+}
+
+
+body {
+    margin: 0;
+    font-family: "prompt", sans-serif;
+    color: white;
+    background: #202731;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+#first {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+    padding-top: 40px;
+    text-align: center;
+
+}
+#second{
+    color:#001220;
+}
+
+p {
+    text-align: center;
+}
+
+.blue {
+    background: #715DF2;
+}
+
+.red {
+    background: #dd3f31;
+}
+
+.pink {
+    background: #ff0066;
+    overflow: hidden;
+}
+
+.dark {
+    background: #001220;
+}
+
+.light{
+    background-color: #fff9f9;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('/SiteStatic/media/wave1.svg');
+}
+
+.layer2 {
+    background-image: url('/SiteStatic/media/wave2.svg');
+}
+
+.layer3{
+    background-image: url('/SiteStatic/media/wave3.svg');
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-central {
+    max-width: 50%;
+}
+
+/*buttons*/
+button {
+    border-radius: 22px;
+    padding: 15px;
+    color: white;
+    background-color: #FA7268;
+}
+
+.button {
+    margin: 5rem;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.spacer-vide{
+    padding: 0px;
+}
+
+/*nav bar*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001220;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links a:hover {
+    color: #715DF2;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style for the card header */
+  .card-header {
+    color: black;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Style for the card content */
+  .card-content{
+    padding: 20px;
+  }
+
+  .card-content p{
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap;
+    padding: 0px;
+  }
